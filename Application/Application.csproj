@@ -11,11 +11,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Entities\Day\" />
-      <Folder Include="Entities\Hour\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="AutoMapper" Version="13.0.1" />
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.16" />

@@ -1,6 +1,8 @@
-﻿namespace Application;
+﻿using Microsoft.EntityFrameworkCore;
 
-public class AppDbContext 
+namespace Application;
+
+public class AppDbContext : DbContext
 {
     
 }
