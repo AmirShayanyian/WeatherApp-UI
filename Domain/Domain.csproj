@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Core\" />
       <Folder Include="Dependency\" />
       <Folder Include="Enums\" />
       <Folder Include="Extensions\" />
@@ -16,6 +15,7 @@
     <ItemGroup>
       <PackageReference Include="AutoMapper" Version="13.0.1" />
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.16" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.16" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.16">
         <PrivateAssets>all</PrivateAssets>
