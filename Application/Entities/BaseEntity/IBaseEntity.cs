@@ -1,4 +1,4 @@
-﻿namespace Application.Entities.BaseEntity;
+﻿namespace Application.Entities;
 
 public interface IBaseEntity
 {

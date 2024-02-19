@@ -1,4 +1,4 @@
-﻿using Application.Entities.BaseEntity;
+﻿using Application.Entities;
 using Domain.Core.Extensions;
 using Microsoft.EntityFrameworkCore;
 

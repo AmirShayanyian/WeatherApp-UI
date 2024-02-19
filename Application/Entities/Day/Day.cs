@@ -1,8 +1,10 @@
 ﻿using Application.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Application.Entities;
 
-public class Day
+public class Day : BaseEntity
 {
     public string? City { get; set; }
 
@@ -17,4 +19,14 @@ public class Day
     //------ ForeignKey down Below -------
     
     public List<TimeOfDay>?  Times { get; set; }
+}
+
+public class DayConfiguration : IEntityTypeConfiguration<Day>
+{
+    public void Configure(EntityTypeBuilder<Day> builder)
+    {
+        builder.HasMany(p => p.Times)
+            .WithOne(p => p.Day)
+            .HasForeignKey(p => p.DayId);
+    }
 }
